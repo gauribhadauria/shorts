@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>accordian</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div id="accordian">
+
+		<div class="card bg-light text-dark">
+			<div class="card-header " >
+				<a href="#ans1" data-toggle="collapse" class="card-link text-dark" >What is HTML?</a> 
+			</div>
+			<div class="card-body collapse show" id="ans1" data-parent="#accordian"> 
+				<p>hyper text markup language</p>
+			</div>
+		</div>
+
+		<div class="card bg-secondary">
+			<div class="card-header " >
+				<a href="#ans2" data-toggle="collapse" class="card-link text-light" >What is HTML?</a> 
+			</div>
+			<div class="card-body collapse text-light" id="ans2" data-parent="#accordian"> 
+				<p>hyper text markup language</p>
+			</div>
+		</div>
+
+        <div class="card bg-white">
+			<div class="card-header " >
+				<a href="#ans3" data-toggle="collapse" class="card-link text-dark" >What is HTML?</a> 
+			</div>
+			<div class="card-body collapse " id="ans3" data-parent="#accordian"> 
+				<p>hyper text markup language</p>
+			</div>
+		</div>
+
+	</div>
+	</div>
+
+</body>
+</html>
