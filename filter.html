@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>filter</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/slim.min.js"></script>
+	<script type="text/javascript" sr="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<input class="form-control" type="text" placeholder="search.." id="search"><br>
+
+<div class=" table-responsive">
+	<table class="table table-bordered table-striped">
+		<thead>
+		<tr>
+			<th>name</th>
+			<th>age</th>
+			<th>email</th>
+		</tr>
+		</thead>
+		<tbody id="mytable">
+		  <tr>
+			<td>gauri</td>
+			<td>25</td>
+			<td>gauribhadauria7@gmail.com</td>
+		  </tr>
+
+		  <tr>
+		  	<td>adarsh</td>
+		  	<td>28</td>
+		  	<td>adarsh@gmail.com</td>
+		  </tr>
+
+		  <tr>
+		  	<td>vaibhav</td>
+		  	<td>30</td>
+		  	<td>vaibhav.com</td>
+		  </tr>
+		</tbody>
+	</table>
+</div>
+
+<script>
+$(document).ready(function(){
+  $("#search").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#mytable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+</body>
+
+</html>
