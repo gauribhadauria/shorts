@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>attr function</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<a href="http://sagarindia.in/" title="sagarindia"id="link">sagarindia</a>
+</body>
+<script>
+	$(document).ready(function(){
+		$("#link").click(function(){
+			$("#link").attr("href" , "https://www.facebook.com/")
+		});
+		$("#link").click(function(){
+			$("#link").attr("target","_blank")
+		})
+		
+		$("#link").attr("class","text-danger");
+		$("#link").removeAttr("title")
+	})
+	</script>
+</html>

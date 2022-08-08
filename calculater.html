@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>calculater</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="bg-dark px-5 py-5 mx-5 my-5">
+	<form class="form-group">
+		<input type="number" class="form-control" id="fn" placeholder="first number">
+		<input type="number" class="form-control" id="sn" placeholder="second number">
+		<input id="res" class="form-control bg-light text-dark" placeholder="result">
+    </form><br>
+    <button type="button" class="btn btn-primary" id="add" >+</button>
+    <button type="button" class="btn btn-warning" id="minus">-</button>
+    <button type="button" class="btn btn-success" id="divide">/</button>
+    <button type="button" class="btn btn-danger"  id="multi">*</button>
+    
+</div>
+<script>
+	$(document).ready(function(){
+		$("#add").click(function(){
+			var f= $("#fn").val();
+			var s= $("#sn").val();
+			var ans= parseInt(f) + parseInt(s);
+			$("#res").val(ans);
+		})
+		$("#minus").click(function(){
+			var f= $("#fn").val();
+			var s= $("#sn").val();
+			var ans= (f) - (s);
+			$("#res").val(ans);
+		})
+		$("#divide").click(function(){
+			var f= $("#fn").val();
+			var s= $("#sn").val();
+			var ans= (f) / (s);
+			$("#res").val(ans);
+		})
+		$("#multi").click(function(){
+			var f= $("#fn").val();
+			var s= $("#sn").val();
+			var ans= (f) * (s);
+			$("#res").val(ans);
+		})
+	})
+	</script>
+     
+
+</body>
+</html>
