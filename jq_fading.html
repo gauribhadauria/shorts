@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jq fading function</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<style>
+	.div{
+		width:200px; height:200px
+	}
+	</style>
+<body>
+	<button type="button" id="button" class="btn btn-warning text-dark">Click to fade out </button>
+	<button type="button" id="button2" class="btn btn-primary text-dark">Click to fade in</button>
+	<button type="button" id="button3" class="btn btn-secondry text-dark">Click to fade Toggle</button>
+	<button type="button" id="button4" class="btn btn-success text-light">Click to fade to</button>
+	<br>
+	<div style="display:inline-flex">
+	<div id="div1" class=" bg-success div" ></div>
+	<div id="div2" class=" bg-dark div" ></div>
+	<div id="div3" class=" bg-danger div" ></div>
+
+
+</div>
+	
+	<script>
+     $(document).ready(function()
+     {
+     	$("#button").click(function()
+     	{
+     		$("#div1").fadeOut(1000);
+     	    $("#div2").fadeOut(2000);
+     	    $("#div3").fadeOut(3000);
+     	});
+     	$("#button2").click(function()
+     	{
+     		$("#div1").fadeIn(1000);
+     	    $("#div2").fadeIn(2000);
+     	    $("#div3").fadeIn(3000);
+     	});
+     	$("#button3").click(function()
+     	{
+     		$("#div1").fadeToggle(1000);
+     	    $("#div2").fadeToggle(2000);
+     	    $("#div3").fadeToggle(3000);
+     	});
+     	$("#button4").click(function()
+     	{
+     		$("#div1").fadeTo(1000,.90);
+     	    $("#div2").fadeTo(2000,.80);
+     	    $("#div3").fadeTo(3000,.50);
+     	});
+     });
+	</script>
+</body>
+</html>

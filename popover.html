@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>popover</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/slim.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container bg-warning my-5">
+		<a  href="#" data-toggle="popover" title="bio" data-content="hello im gauri bhadauria . I'm full stack developer. plz contact me for your any kind of projects" data-placement="bottom" data-trigger="focus">click to know more about gauri
+		</a>
+	</div>
+
+</body>
+<script>
+$(document).ready(function(){
+  $('[data-toggle="popover"]').popover();
+});
+</script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>add function</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+
+	<button type="button" class="btn btn-danger" id="btn1">click to append</button>
+	<button type="button" class="btn btn-success" id="btn2">click to prepend</button>
+	<button type="button" class="btn btn-dark" id="btn3">click to before</button>
+	<button type="button" class="btn btn-warning" id="btn4">click to after</button>
+	<div class="bg-primary mx-5" style="width:300px; height:200">
+	<ol>
+		<li>gauri</li>
+		<li>adarsh</li>
+		<li>vaibhav</li>
+	</ol>
+    </div>
+	<script>
+		$(document).ready(function(){
+          $("#btn1").click(function(){
+          	$("ol").append("<li>nisha</li>")
+          })
+          $("#btn2").click(function(){
+          	$("ol").prepend("<li>nisha</li>")
+          })
+          $("#btn3").click(function(){
+          	$("ol").before("<li>nisha</li>")
+          })
+          $("#btn4").click(function(){
+          	$("ol").after("<li>nisha</li>")
+          })
+		})
+	</script>
+
+</body>
+</html>

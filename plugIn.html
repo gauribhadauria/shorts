@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>plugin</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.1/css/dataTables.bootstrap4.min.css">
+	<script type="text/javascript" src="js/slim.min.js"></script>
+	<script type="text/javascript" sr="js/popper.min.js"></script>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.12.1/js/dataTables.bootstrap4.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</head>
+<body>
+	<div class="table-responsive">
+		<table class="table table-bordered table-striped" id="mytable">
+			<thead>
+				<tr> 
+					<th>institute</th>
+					<th>department</th>
+					<th>batchYear</th>
+					<th>roll no</th>
+					<th>first name</th>
+					<th>last name</th>
+					<th>DOB</th>
+					<th>Contact</th>
+					<th>Email</th>
+					<th>Address</th>
+				</tr>
+				
+			</thead>
+			<tbody>
+				<tr>
+				    <td>uiet</td>
+				    <td>bioinformatics</td>
+				    <td>2020-2022</td>
+				    <td>0141001</td>
+				    <td>kishlay</td>
+				    <td>pratap</td>				
+				    <td>08/07/95</td>				
+				    <td>000000000</td>				
+				    <td>kishalay@gmail.com</td>				
+				    <td>bihar</td>
+
+				</tr>
+
+				<tr> 
+					<td>uiet</td>
+				    <td>bioinformatics</td>
+				    <td>2020-2022</td>
+				    <td>0141002</td>
+				    <td>amisha</td>
+				    <td>gautam</td>				
+				    <td>05/05/1999</td>				
+				    <td>9897863452</td>				
+				    <td>ami@gmail.com</td>				
+				    <td>brra</td>
+				</tr>
+				<tr> 
+					 <td>uiet</td>
+				    <td>bioinformatics</td>
+				    <td>2020-2022</td>
+				    <td>0141003</td>
+				    <td>gauri</td>
+				    <td>bhadauria</td>				
+				    <td>22/07/1998</td>				
+				    <td>8299195772</td>				
+				    <td>gauri@gmail.com</td>				
+				    <td>rajamarket</td>
+				</tr>
+				<tr> 
+					 <td>uiet</td>
+				    <td>bioinformatics</td>
+				    <td>2020-2022</td>
+				    <td>0141004</td>
+				    <td>manisha</td>
+				    <td>kushwaha</td>				
+				    <td>21/06/1999</td>				
+				    <td>4876042785</td>				
+				    <td>manisha@gmail.com</td>				
+				    <td>kidwainagar</td>
+				</tr>
+
+			</tbody>
+			<tfooter>
+				<tr> 
+					<th>institute</th>
+					<th>department</th>
+					<th>batchYear</th>
+					<th>roll no</th>
+					<th>first name</th>
+					<th>last name</th>
+					<th>DOB</th>
+					<th>Contact</th>
+					<th>Email</th>
+					<th>Address</th>
+				</tr>
+			</tfooter>
+		</table>
+	</div>
+	<script>
+$(document).ready(function () {
+    $('#mytable').DataTable();
+});
+</script>
+</body>
+</html>

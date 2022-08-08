@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>remove & empty function</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+		<button type="button" class="btn btn-danger mx-5" id="remove">click to apply remove()</button>
+
+	<div style=" margin-left: 20px;" class="text-center">
+	    <div class="bg-primary px-5 mx-5" style="width:200px; height:100px" id="div1">
+		<ul id="list1">
+			<li>krishika</li>
+			<li>bbbb</li>
+			<li>cccc</li>
+			<li>dddd</li>
+		</ul>
+	    </div>
+	</div>
+	    <button type="button" class="btn btn-danger mx-5 " id="empty">click to apply empty()</button>
+	<div style=" margin-left: 20px;" class="text-center">
+        <div class="bg-success px-5 mx-5" style="width:200px; height:100px" id="div2">
+		<ul id="list2" >
+			<li>AAAA</li>
+			<li>BBBB</li>
+			<li>BBBB</li>
+			<li>DDDD</li>
+		</ul>
+	    </div>
+
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$("#remove").click(function(){
+				$("#div1").remove()
+			})
+			$("#empty").click(function(){
+				$("#div2").empty()
+			})
+		})
+	</script>
+
+</body>
+</html>

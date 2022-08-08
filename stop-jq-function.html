@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>stop</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+<button type="button" id="btn" class="btn">click to slide up</button>
+<button type="button" id="btn2" class="btn">click to stop</button>
+<div class="bg-primary jumbotron " id="box">
+	<img src="images/nature.jpg" class=" p-5" id="img" >
+</div>
+<script>
+	$(document).ready(function(){
+		$("#btn").click(function(){ 
+			$("#box").slideUp(10000);
+			$("#img").slideUp(10000)
+		})
+		$("#btn2").click(function(){
+			$("#box").stop();
+			$("#img").stop()
+		})
+	
+	})
+</script>
+</body>
+</html>

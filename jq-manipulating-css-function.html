@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jq manipulating css function </title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+
+</head>
+<body>
+	<style>
+		.cls1{
+			color: red;
+			
+		}
+		.cls2{
+			font-weight: bolder;
+			font-size: 400%;
+		}
+		.cls3{
+			margin: 50px;
+		}
+	</style>
+     <button type="button" id="btn1">click to addclass</button>
+      <button type="button" id="btn2">click to removeclass</button>
+       <button type="button" id="btn3">click to toggleclass</button>
+        <button type="button" id="btn4">click to access css</button>
+	<p id="p1" class="bg-primary cls3" >hello</p>
+
+<script>
+$(document).ready(function(){
+ $("#btn1").click(function(){
+	$("#p1").addClass("cls1 cls2 cls3")
+})
+  $("#btn2").click(function(){
+	$("#p1").removeClass("cls1 cls2 cls3")
+})
+   $("#btn3").click(function(){
+	$("#p1").toggleClass("cls1 cls2 cls3")
+})
+    $("#btn4").click(function(){
+	$("#p1").css("cls3","margin")
+})
+})
+</script>
+</body>
+</html>
